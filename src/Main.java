@@ -11,23 +11,30 @@ public class Main {
             System.out.println(y);
         }
         {
-        // задание 2
+            // задание 2
 
-        for(int f = 5; f <= 31; f=f+7){
-            System.out.println(("Сегодня пятница" ) + f+ ("е число. Необходимо подготовить отчет"));
+            for (int f = 5; f <= 31; f = f + 7) {
+                System.out.println(("Сегодня пятница") + f + ("е число. Необходимо подготовить отчет"));
+            }
         }
-    }
 
         // задание 3
-        int Y=0, year=2022;
-        int yearStart = year+100;
-        int yearStop = year-200;
-        while (Y<=yearStart){
-            Y+=79;
-            if (Y%79==0&&Y>=yearStop) {
+
+        int Y = 0, year = 2022;
+        int yearStart = year + 100;
+        int yearStop = year - 200;
+        for (;Y < yearStart; Y += 79){
+            if (Y > yearStop)
+            {
                 System.out.println(Y);
             }
-                }
+
+
         }
+    }
 }
+
+
+
+
 
